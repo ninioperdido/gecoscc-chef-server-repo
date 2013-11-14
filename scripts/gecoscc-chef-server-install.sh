@@ -35,3 +35,6 @@ mv /tmp/cookbooks/*${COOKBOOK_NAME}* /tmp/cookbooks/${COOKBOOK_NAME}
 
 chef-solo -c /tmp/solo.rb -j /tmp/solo.json 
 echo "yes" | rvm implode
+
+chef-server-ctl reconfigure
+chef-server-ctl test
