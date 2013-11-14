@@ -18,8 +18,7 @@ All you need to do is to execute our install script which will:
 And of course, the snippet to run the install script:
 
 <pre>
-wget -O /tmp/gecoscc-deploy https://raw.github.com/gecos-team/gecoscc-chef-server-repo/master/scripts/gecoscc-chef-server-install.sh
-/bin/bash /tmp/gecoscc-deploy
+curl -L https://raw.github.com/gecos-team/gecoscc-chef-server-repo/master/scripts/gecoscc-chef-server-install.sh | bash
 </pre>
 
 That is.
