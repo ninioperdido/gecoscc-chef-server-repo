@@ -6,7 +6,7 @@ This chef-repo contains all the needed components (databags, cookbooks, roles...
 How to deploy a gecoscc-chef-server-repo
 ========================================
 
-All you need to do is to execute our install script which will:
+All you need to do is to execute our [install script](https://github.com/gecos-team/gecoscc-chef-server-repo/blob/master/scripts/gecoscc-chef-server-install.sh) which will:
 
 * Install 'rvm'
 * Install 'ruby' stable version using 'rvm'
