@@ -12,7 +12,7 @@ export COOKBOOK_NAME='gecoscc-chef-server-cookbook'
 
 curl -L https://get.rvm.io | bash -s stable --ruby
 . /etc/profile.d/rvm.sh 
-rvm use ruby-2.0.0
+rvm use ruby-2.1.0
 gem install chef --no-ri --no-rdoc
 
 cat > /tmp/solo.rb << EOF
