@@ -8,7 +8,7 @@
 # All rights reserved - EUPL License V 1.1
 # http://www.osor.eu/eupl
 
-export COOKBOOK_NAME='cookbook-gecoscc-chef-server'
+export COOKBOOK_NAME='gecoscc-chef-server-cookbook'
 
 curl -L https://get.rvm.io | bash -s stable --ruby
 . /etc/profile.d/rvm.sh 
@@ -24,7 +24,7 @@ EOF
 
 cat > /tmp/solo.json << EOF
 {
-    "run_list": [ "recipe[cookbook-gecoscc-chef-server::default]" ]
+    "run_list": [ "recipe[gecoscc-chef-server-cookbook::default]" ]
 }
 EOF
 
