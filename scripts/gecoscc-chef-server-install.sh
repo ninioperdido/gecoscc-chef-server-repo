@@ -31,7 +31,7 @@ cat > /tmp/solo.json << EOF
 EOF
 
 mkdir /tmp/cookbooks
-wget -O /tmp/${COOKBOOK_NAME}.tar.gz https://api.github.com/repos/gecos-team/${COOKBOOK_NAME}/tarball 
+curl -o /tmp/${COOKBOOK_NAME}.tar.gz https://api.github.com/repos/gecos-team/${COOKBOOK_NAME}/tarball 
 tar -C /tmp/cookbooks -zxf /tmp/${COOKBOOK_NAME}.tar.gz
 mv /tmp/cookbooks/*${COOKBOOK_NAME}* /tmp/cookbooks/${COOKBOOK_NAME}
 
