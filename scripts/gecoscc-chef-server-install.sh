@@ -25,7 +25,7 @@ EOF
 
 cat > /tmp/solo.json << EOF
 {
-    "run_list": [ "recipe[gecoscc-chef-server-cookbook::default]" ]
+    "run_list": [ "recipe[${COOKBOOK_NAME}::default]" ]
 }
 EOF
 
