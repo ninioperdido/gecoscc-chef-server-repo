@@ -9,8 +9,7 @@
 # http://www.osor.eu/eupl
 
 export COOKBOOK_NAME='gecoscc-chef-server-cookbook'
-export REMOTE_IP=$(curl ifconfig.me)
-echo "$REMOTE_IP $HOSTNAME" >> /etc/hosts
+grep "$HOSTNAME" /etc/hosts || sed -i "s|\(127.0.0.1.*\)|\1 $HOSTNAME|g" /etc/hosts
 
 curl -L https://get.rvm.io | bash -s stable --ruby
 . /etc/profile.d/rvm.sh 
