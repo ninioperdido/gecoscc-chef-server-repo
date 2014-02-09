@@ -29,6 +29,7 @@ cat > /tmp/solo.json << EOF
 }
 EOF
 
+test -d /tmp/cookbooks && rm -rf /tmp/cookbooks
 mkdir /tmp/cookbooks
 curl -o /tmp/${COOKBOOK_NAME}.tar.gz https://api.github.com/repos/gecos-team/${COOKBOOK_NAME}/tarball 
 tar -C /tmp/cookbooks -zxf /tmp/${COOKBOOK_NAME}.tar.gz
