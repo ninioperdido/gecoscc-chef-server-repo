@@ -13,7 +13,7 @@ grep "$HOSTNAME" /etc/hosts || sed -i "s|\(127.0.0.1.*\)|\1 $HOSTNAME|g" /etc/ho
 
 curl -L https://get.rvm.io | bash -s stable --ruby
 . /etc/profile.d/rvm.sh 
-rvm use ruby-2.1.0
+rvm use --default $(rvm current)
 gem install chef --no-ri --no-rdoc
 
 cat > /tmp/solo.rb << EOF
