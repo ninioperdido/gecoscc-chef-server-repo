@@ -8,15 +8,18 @@
 # All rights reserved - EUPL License V 1.1
 # http://www.osor.eu/eupl
 
+export RUBY_VER=2.1.1
 export GEM_DEPENDS="chef berkshelf"
 export CHEF_REPO_NAME='gecoscc-chef-server-repo'
 export CHEF_REPO_URL="https://github.com/gecos-team/${CHEF_REPO_NAME}.git"
 grep "$HOSTNAME" /etc/hosts || sed -i "s|\(127.0.0.1.*\)|\1 $HOSTNAME|g" /etc/hosts
 
-# install rvm
-curl -L https://get.rvm.io | bash -s stable --ruby
-. /etc/profile.d/rvm.sh 
-rvm use --default $(rvm current)
+# install rvm and ruby
+
+curl -L https://get.rvm.io | bash -s stable
+source /etc/profile.d/rvm.sh 
+rvm install ruby-$RUBY_VER
+rvm use --default ruby-$RUBY_VER
 gem install $GEM_DEPENDS --no-ri --no-rdoc
 
 # install git
