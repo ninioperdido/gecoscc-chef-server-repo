@@ -10,7 +10,7 @@
 
 export RUBY_VER=2.1.1
 export CHEF_SERVER_VER=11.0.11
-export GEM_DEPENDS="bundler"
+export GEM_DEPENDS="bundler ohai"
 export CHEF_REPO_NAME='gecoscc-chef-server-repo'
 export CHEF_REPO_URL="https://github.com/gecos-team/${CHEF_REPO_NAME}.git"
 grep -q "$HOSTNAME" /etc/hosts || sed -i "s|\(127.0.0.1.*\)|\1 $HOSTNAME|g" /etc/hosts
