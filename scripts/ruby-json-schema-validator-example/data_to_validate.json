@@ -1,0 +1,8 @@
+{
+  "gecos_networkmanagement": {
+    "default_recipe": {
+      "setup_connection_resource": {
+        "network_type": "wired"
+      }
+    }
+}

@@ -1,0 +1,60 @@
+{
+  "properties": {
+    "gecos_networkmanagement": {
+      "default_recipe": {
+        "setup_connection_resource": {
+          "users": {
+            "items": {
+              "$ref": "#/gecos_networkmanagement/default_recipe/setup_connection_resource"
+            },
+            "uniqueItems": "true",
+            "minItems": "0",
+            "type": "array"
+          },
+          "type": "object",
+          "required": [
+            "network_type"
+          ],
+          "network_type": {
+            "pattern": "(wired|wireless)",
+            "type": "string"
+          },
+          "use_dhcp": {
+            "type": "boolean"
+          },
+          "ip_address": {
+            "type": "string"
+          },
+          "gateway": {
+            "type": "string"
+          },
+          "netmask": {
+            "type": "string"
+          },
+          "dns_servers": {
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true,
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "setup_connection_resource"
+        ],
+        "type": "object"
+      },
+      "required": [
+        "default_recipe"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "gecos_networkmanagement"
+  ],
+  "type": "object",
+  "description": "GECOS Network Management cookbook attributes json-schema",
+  "id": "http://some.site.somewhere/entry-schema#"
+}
