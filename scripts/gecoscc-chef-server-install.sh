@@ -56,7 +56,7 @@ cat > /tmp/solo.json << EOF
 {
     "run_list": [ "recipe[gecoscc-chef-server]" ],
     "gecoscc-chef-server": {
-        "chef-server-version": '$CHEF_SERVER_VER'
+        "chef-server-version": "$CHEF_SERVER_VER"
     }
 }
 EOF
