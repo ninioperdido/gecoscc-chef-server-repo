@@ -102,7 +102,11 @@ validation_client_name   'chef-validator'
 validation_key           '/etc/chef-server/chef-validator.pem'
 chef_server_url          'http://localhost/'
 syntax_check_cache_path  '/root/.chef/syntax_check_cache'
+cookbook_path            '${LOCAL_CHEF_REPO}/cookbooks'
 EOF
+
+# upload all the cookbooks
+knife cookbook upload -a
 
 # remove temporal rvm installation
 echo "yes" | rvm implode
