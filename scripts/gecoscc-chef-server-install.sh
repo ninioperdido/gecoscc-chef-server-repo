@@ -11,7 +11,7 @@
 export RUBY_VER=2.1.1
 export CHEF_CLIENT_VER=11.10.4
 export CHEF_SERVER_VER=11.0.11
-export GEM_DEPENDS="chef berkshelf"
+export GEM_DEPENDS="bundler"
 export CHEF_REPO_NAME='gecoscc-chef-server-repo'
 export CHEF_REPO_URL="https://github.com/gecos-team/${CHEF_REPO_NAME}.git"
 grep -q "$HOSTNAME" /etc/hosts || sed -i "s|\(127.0.0.1.*\)|\1 $HOSTNAME|g" /etc/hosts
@@ -68,6 +68,7 @@ test -d $LOCAL_CHEF_REPO && rm -rf $LOCAL_CHEF_REPO
 # download chef-repo
 git clone $CHEF_REPO_URL $LOCAL_CHEF_REPO
 cd $LOCAL_CHEF_REPO
+bundle install
 git submodule init
 git submodule update
 for cookbook in cookbooks/*
