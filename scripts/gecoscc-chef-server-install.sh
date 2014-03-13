@@ -9,6 +9,8 @@
 # http://www.osor.eu/eupl
 
 export RUBY_VER=2.1.1
+export CHEF_CLIENT_VER=11.10.4
+export CHEF_SERVER_VER=11.0.11
 export GEM_DEPENDS="chef berkshelf"
 export CHEF_REPO_NAME='gecoscc-chef-server-repo'
 export CHEF_REPO_URL="https://github.com/gecos-team/${CHEF_REPO_NAME}.git"
@@ -52,7 +54,10 @@ EOF
 # create node's json
 cat > /tmp/solo.json << EOF
 {
-    "run_list": [ "recipe[gecoscc-chef-server]" ]
+    "run_list": [ "recipe[gecoscc-chef-server]" ],
+    "gecoscc-chef-server": {
+        "chef-server-version": '$CHEF_SERVER_VER'
+    }
 }
 EOF
 
