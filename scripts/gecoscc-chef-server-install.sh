@@ -9,7 +9,6 @@
 # http://www.osor.eu/eupl
 
 export RUBY_VER=2.1.1
-export CHEF_CLIENT_VER=11.10.4
 export CHEF_SERVER_VER=11.0.11
 export GEM_DEPENDS="bundler"
 export CHEF_REPO_NAME='gecoscc-chef-server-repo'
