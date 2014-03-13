@@ -67,6 +67,7 @@ test -d $LOCAL_CHEF_REPO && rm -rf $LOCAL_CHEF_REPO
 # download chef-repo
 git clone $CHEF_REPO_URL $LOCAL_CHEF_REPO
 cd $LOCAL_CHEF_REPO
+git checkout json-schema-poc
 bundle install
 git submodule init
 git submodule update
