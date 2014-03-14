@@ -107,7 +107,7 @@ cookbook_path            '${LOCAL_CHEF_REPO}/cookbooks'
 EOF
 
 # upload all the cookbooks
-knife cookbook upload -a
+knife cookbook upload -c /tmp/knife.rb -a
 
 # remove temporal rvm installation
 echo "yes" | rvm implode
