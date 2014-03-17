@@ -10,13 +10,15 @@
 
 export RUBY_VER=2.1.1
 export CHEF_SERVER_VER=11.0.11
-export GEM_DEPENDS="bundler"
+export GEM_DEPENDS="bundler ohai"
 export CHEF_REPO_NAME='gecoscc-chef-server-repo'
 export CHEF_REPO_URL="https://github.com/gecos-team/${CHEF_REPO_NAME}.git"
 grep -q "$HOSTNAME" /etc/hosts || sed -i "s|\(127.0.0.1.*\)|\1 $HOSTNAME|g" /etc/hosts
 
-# install rvm and ruby
+# if we are in a "yum-able" system, install EPEL depend needed for 'rvm' install
+which yum && yum install -y http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
+# install rvm and ruby
 curl -L https://get.rvm.io | bash -s stable
 source /etc/profile.d/rvm.sh 
 rvm install ruby-$RUBY_VER
@@ -28,7 +30,6 @@ PLATFORM=$(ohai |grep platform_family|awk -F: '{print $2}'|sed 's|[", ]||g')
 
 case $PLATFORM in
   "rhel")
-    yum install -y http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
     yum install -y git
     ;;
   "debian")
@@ -55,7 +56,7 @@ cat > /tmp/solo.json << EOF
 {
     "run_list": [ "recipe[gecoscc-chef-server]" ],
     "gecoscc-chef-server": {
-        "chef-server-version": '$CHEF_SERVER_VER'
+        "chef-server-version": "$CHEF_SERVER_VER"
     }
 }
 EOF
@@ -101,13 +102,13 @@ node_name                'admin'
 client_key               '/etc/chef-server/admin.pem'
 validation_client_name   'chef-validator'
 validation_key           '/etc/chef-server/chef-validator.pem'
-chef_server_url          'http://localhost/'
+chef_server_url          'https://localhost/'
 syntax_check_cache_path  '/root/.chef/syntax_check_cache'
 cookbook_path            '${LOCAL_CHEF_REPO}/cookbooks'
 EOF
 
 # upload all the cookbooks
-knife cookbook upload -a
+knife cookbook upload -c /tmp/knife.rb -a
 
 # remove temporal rvm installation
 echo "yes" | rvm implode
