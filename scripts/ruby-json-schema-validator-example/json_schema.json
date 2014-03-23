@@ -1,0 +1,110 @@
+{
+  "properties": {
+    "gecos_ws_mgmt": {
+      "properties": {
+        "network_mgmt": {
+          "properties": {
+            "network_res": {
+              "properties": {
+                "job_ids": {
+                  "items": {
+                    "properties": {
+                      "status": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id"
+                    ],
+                    "type": "object"
+                  },
+                  "uniqueItems": true,
+                  "minItems": 0,
+                  "type": "array"
+                },
+                "users": {
+                  "items": {
+                    "properties": {
+                      "use_dhcp": {
+                        "type": "boolean"
+                      },
+                      "network_type": {
+                        "type": "string",
+                        "pattern": "(^wired$|wireless|vpn|proxy)"
+                      },
+                      "netmask": {
+                        "type": "string"
+                      },
+                      "ip_address": {
+                        "type": "string"
+                      },
+                      "gateway": {
+                        "type": "string"
+                      },
+                      "username": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "username",
+                      "network_type"
+                    ],
+                    "type": "object"
+                  },
+                  "uniqueItems": true,
+                  "minItems": 0,
+                  "type": "array"
+                },
+                "dns_server": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "uniqueItems": true,
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "use_dhcp": {
+                  "type": "boolean"
+                },
+                "network_type": {
+                  "type": "string",
+                  "pattern": "(^wired$|wireless)"
+                },
+                "netmask": {
+                  "type": "string"
+                },
+                "ip_address": {
+                  "type": "string"
+                },
+                "gateway": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "network_type"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "network_res"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "network_mgmt"
+      ],
+      "type": "object"
+    }
+  },
+  "type": "object",
+  "required": [
+    "gecos_ws_mgmt"
+  ],
+  "id": "http://gecos-server/cookbooks/gecos_ws_mgmt/0.2.0/network-schema#",
+  "description": "GECOS workstation management LWRPs json-schema"
+}
