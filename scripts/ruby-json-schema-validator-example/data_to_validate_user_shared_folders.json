@@ -2,14 +2,19 @@
     "gecos_ws_mgmt": {
         "users_mgmt": {
             "user_shared_folders_res": {
-                "gtkbookmarks": [
+                "gtkbookmarksfiles":[
                     {
-                        "title": "sam",
-                        "uri": "smb://sam"
-                    },
-                    {
-                        "title": "isos",
-                        "uri": "smb://sam/público/isos"
+                        "user": "damian",
+                        "gtkbookmarks": [
+                             {
+                                 "title": "sam",
+                                 "uri": "smb://sam"
+                             },
+                             {
+                                 "title": "isos",
+                                 "uri": "smb://sam/público/isos"
+                             }
+                         ]
                     }
                 ]
             }
