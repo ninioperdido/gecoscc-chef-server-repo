@@ -1,0 +1,36 @@
+{
+    "gecos_ws_mgmt": {
+        "users_mgmt": {
+            "web_browser_res": {
+                "web_browser_conf":[
+                    {
+                        "user":"damian",
+                        "plugins": [
+                            {
+                                "title": "firebug",
+                                "uri": "https://addons.mozilla.org/es/firefox/addon/firebug/"
+                            },
+                            {
+                                "title": "pocket",
+                                "uri": "https://addons.mozilla.org/es/firefox/addon/read-it-later"
+                            }
+                        ],
+                        "bookmarks": [
+                            {
+                                "title": "Marca",
+                                "uri": "http://www.marca.es"
+                            }
+                        ],
+                        "config": [
+                            {
+                                "key": "key1",
+                                "value": "value1"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
+                        
