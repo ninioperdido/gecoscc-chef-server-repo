@@ -1,0 +1,12 @@
+{
+    "gecos_ws_mgmt": {
+        "software_mgmt": {
+            "app_config_res": {
+                "adobe_config": {},
+                "java_config": {},
+                "firefox_config": {},
+                "thunderbird_config": {}
+            }
+        }
+    }
+} 
