@@ -1,0 +1,15 @@
+{
+    "gecos_ws_mgmt": {
+        "users_mgmt": {
+            "user_launchers_res": {
+                "launchers":[
+                    {
+                        "user":"damian",
+                        "launchers": ["firefox.desktop", "gedit.desktop"]
+                    }
+                ]
+            }
+        }
+    }
+}
+                        
