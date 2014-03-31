@@ -2,9 +2,9 @@
     "gecos_ws_mgmt": {
         "users_mgmt": {
             "user_launchers_res": {
-                "launchers":[
+                "users":[
                     {
-                        "user":"damian",
+                        "username":"damian",
                         "launchers": ["firefox.desktop", "gedit.desktop"]
                     }
                 ]
