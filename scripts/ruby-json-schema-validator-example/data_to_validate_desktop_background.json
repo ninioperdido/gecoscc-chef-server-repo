@@ -1,0 +1,15 @@
+{
+    "gecos_ws_mgmt": {
+        "users_mgmt": {
+            "desktop_background_res": {
+                "users":[
+                    {
+                        "user":"damian",
+                        "desktop_file": "http://localhost/background.png"
+                    }
+                ]
+            }
+        }
+    }
+}
+                        
