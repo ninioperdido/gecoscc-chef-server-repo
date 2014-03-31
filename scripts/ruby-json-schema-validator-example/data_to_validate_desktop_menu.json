@@ -1,0 +1,15 @@
+{
+    "gecos_ws_mgmt": {
+        "users_mgmt": {
+            "desktop_menu_res": {
+                "users":[
+                    {
+                        "username":"damian",
+                        "desktop_files": ["firefox.desktop", "gedit.desktop"]
+                    }
+                ]
+            }
+        }
+    }
+}
+                        
