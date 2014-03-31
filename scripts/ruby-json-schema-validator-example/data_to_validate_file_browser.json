@@ -1,0 +1,20 @@
+{
+    "gecos_ws_mgmt": {
+        "users_mgmt": {
+            "file_browser_res": {
+                "file_browser_conf":[
+                    {
+                        "user":"damian",
+                        "conf":{
+                                "auto_mount": true,
+                                "explore_net": false,
+                                "show_options_mount": false,
+                                "burn_disc": false
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
+                        
