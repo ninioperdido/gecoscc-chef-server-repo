@@ -1,0 +1,10 @@
+{
+    "gecos_ws_mgmt": {
+        "misc_mgmt": {
+            "local_groups_res": {
+              "groups_list":[{"group":"group1","users":["user1","user2"]},{"group":"group2","users":["user3","user1"]},{"group":"group3"}]
+              
+            }
+        }
+    }
+}
