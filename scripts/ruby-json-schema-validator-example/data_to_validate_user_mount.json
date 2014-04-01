@@ -1,0 +1,15 @@
+{
+    "gecos_ws_mgmt": {
+        "users_mgmt": {
+            "user_mount_res": {
+                "users":[
+                    {
+                        "username":"damian",
+                        "can_mount": true
+                    }
+                ]
+            }
+        }
+    }
+}
+                        
