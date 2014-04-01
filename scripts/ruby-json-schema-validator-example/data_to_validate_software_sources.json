@@ -1,0 +1,19 @@
+{
+    "gecos_ws_mgmt": {
+        "software_mgmt": {
+            "software_sources_res": {
+            "repo_list":[{    
+              "repo_name":"repo1",
+              "distribution":"precise",
+              "components":["main"],
+              "uri":"http://url",
+              "deb_src":false,
+              "repo_key":"",
+              "key_server":""
+              }]
+
+
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "gecos_ws_mgmt": {
+        "misc_mgmt": {
+            "local_file": {
+              "delete_files":[{"file":"/home/user1/file","backup": false }],
+              "copy_files":[{"file_orig":"/home/user1/file1","file_dest":"/home/user1/file2","user":"user1","group":"user1","mode":"0755","overwrite":true }]
+              
+            }
+        }
+    }
+}

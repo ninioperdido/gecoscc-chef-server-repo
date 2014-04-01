@@ -1,0 +1,9 @@
+{
+    "gecos_ws_mgmt": {
+        "misc_mgmt": {
+            "local_users_res": {
+              "users_list":[{"user":"user1","actiontorun":"create","groups":["grp1","grp2","grp3"],"password":"pw1"}]
+            }
+        }
+    }
+}
