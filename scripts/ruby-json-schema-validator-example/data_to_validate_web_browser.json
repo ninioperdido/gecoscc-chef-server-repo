@@ -26,6 +26,12 @@
                                 "key": "key1",
                                 "value": "value1"
                             }
+                        ],
+                        "certs": [
+                            {
+                                "name": "FNMT",
+                                "uri": "https://www.sede.fnmt.gob.es/documents/11614/66000/Certificado+Raiz+Clase2A/29de1646-675e-49b3-bd8e-0ff6ca02cb66"
+                            }
                         ]
                     }
                 ]
