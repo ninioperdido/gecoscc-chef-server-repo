@@ -1,0 +1,11 @@
+{
+    "gecos_ws_mgmt": {
+        "misc_mgmt": {
+            "scripts_launch_res": {
+              "on_startup":["touch /tmp/test","touch /tmp/test2"],
+              "on_shutdown":["touch /tmp/test3","touch /tmp/test4"]
+
+            }
+        }
+    }
+}
