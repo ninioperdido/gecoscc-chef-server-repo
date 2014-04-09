@@ -2,9 +2,7 @@
     "gecos_ws_mgmt": {
         "printers_mgmt": {
             "printers_res": {
-              "printers":["printer1"],
-              "available_printers":[{"name" : "printer1","make":"make1","model":"model1","ppd":"ppdname","uri":"uri1","ppd_uri":"ppd_uri1"}],
-              "manual_printers":[{"name" : "printer2","make":"make2","model":"model2","ppd":"ppdname2","uri":"uri2","ppd_uri":"ppd_uri2"}]
+              "printers_list":[{"name" : "printer BROTHER2","manufacturer":"BROTHER","model":"2055D","ppd":"foomatic-ppds","uri":"idp://network/print1","ppd_uri":"ppd_uri2"}]
 
             }
         }
