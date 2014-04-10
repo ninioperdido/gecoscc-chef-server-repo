@@ -10,8 +10,8 @@
                 "netmask": "255.255.255.0"
             },
             "sssd_js": {
-                 "domain_list": "chap.junta-andalucia.es",
-                 "workgroup": "CHAP"
+                 "domain_list": "domain.name",
+                 "workgroup": "workgroup"
             }
         }
     }
