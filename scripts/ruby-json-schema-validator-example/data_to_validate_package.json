@@ -1,0 +1,9 @@
+{
+    "gecos_ws_mgmt": {
+        "software_mgmt": {
+            "package_res": {
+              "package_list":["apache2","htop"]
+            }
+        }
+    }
+}
