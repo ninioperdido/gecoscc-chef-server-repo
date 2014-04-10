@@ -1,0 +1,18 @@
+{
+    "gecos_ws_mgmt": {
+        "network_mgmt": {
+            "network_res": {
+                "network_type": "wired",
+                "use_dhcp": false,
+                "ip_address": "10.0.2.15",
+                "gateway": "10.0.2.2",
+                "dns_servers": ["10.0.2.3"],
+                "netmask": "255.255.255.0"
+            },
+            "sssd_js": {
+                 "domain_list": "chap.junta-andalucia.es",
+                 "workgroup": "CHAP"
+            }
+        }
+    }
+}
