@@ -5,5 +5,5 @@
 	path = cookbooks/gecoscc-chef-server
 	url = https://github.com/gecos-team/gecoscc-chef-server-cookbook.git
 [submodule "cookbooks/gecos-ws-mgmt"]
-	path = cookbooks/gecos-ws-mgmt
+	path = cookbooks/gecos_ws_mgmt
 	url = https://github.com/gecos-team/gecos-workstation-management-cookbook.git
