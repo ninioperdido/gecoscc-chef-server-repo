@@ -54,7 +54,7 @@ EOF
 # create node's json
 cat > /tmp/solo.json << EOF
 {
-    "run_list": [ "recipe[gecoscc-chef-server]" ],
+    "run_list": [ "recipe[gecoscc-chef-server]","recipe[gecosccui]" ],
     "gecoscc-chef-server": {
         "chef-server-version": "$CHEF_SERVER_VER"
     }
