@@ -110,5 +110,5 @@ EOF
 knife cookbook upload -c /tmp/knife.rb -a
 
 # remove temporal rvm installation
-echo "yes" | rvm implode
+#echo "yes" | rvm implode
 
