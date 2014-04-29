@@ -9,7 +9,7 @@
 # http://www.osor.eu/eupl
 
 export RUBY_VER=2.1.1
-export CHEF_SERVER_VER=11.0.11
+export CHEF_SERVER_VER=11.0.12
 export GEM_DEPENDS="bundler ohai"
 export CHEF_REPO_NAME='gecoscc-chef-server-repo'
 export CHEF_REPO_URL="https://github.com/gecos-team/${CHEF_REPO_NAME}.git"
