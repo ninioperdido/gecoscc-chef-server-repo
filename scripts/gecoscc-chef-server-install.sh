@@ -88,9 +88,9 @@ done
 # install software via cookbooks
 chef-solo -c /tmp/solo.rb -j /tmp/solo.json 
 
-# finish chef-server installation
-chef-server-ctl reconfigure
-chef-server-ctl test
+## finish chef-server installation
+#chef-server-ctl reconfigure
+#chef-server-ctl test
 
 # configure knife.rb
 
@@ -101,7 +101,7 @@ node_name                'admin'
 client_key               '/etc/chef-server/admin.pem'
 validation_client_name   'chef-validator'
 validation_key           '/etc/chef-server/chef-validator.pem'
-chef_server_url          'https://localhost/'
+chef_server_url          'https://localhost:449/'
 syntax_check_cache_path  '/root/.chef/syntax_check_cache'
 cookbook_path            '${LOCAL_CHEF_REPO}/cookbooks'
 EOF
