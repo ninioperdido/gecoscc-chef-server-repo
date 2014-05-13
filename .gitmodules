@@ -5,14 +5,14 @@
 	path = cookbooks/gecoscc-chef-server
 	url = https://github.com/gecos-team/gecoscc-chef-server-cookbook.git
 [submodule "cookbooks/chef-client"]
-  path = cookbooks/chef-client
-  url = https://github.com/opscode-cookbooks/chef-client.git
+	path = cookbooks/chef-client
+  	url = https://github.com/opscode-cookbooks/chef-client.git
 [submodule "cookbooks/cron"]
-  path = cookbooks/cron
-  url = https://github.com/opscode-cookbooks/cron.git
+  	path = cookbooks/cron
+  	url = https://github.com/opscode-cookbooks/cron.git
 [submodule "cookbooks/logrotate"]
-  path = cookbooks/logrotate
-  url = https://github.com/stevendanna/logrotate.git
+  	path = cookbooks/logrotate
+  	url = https://github.com/stevendanna/logrotate.git
 [submodule "cookbooks/gecos-ws-mgmt"]
 	path = cookbooks/gecos-ws-mgmt
 	url = https://github.com/gecos-team/gecos-workstation-management-cookbook.git
