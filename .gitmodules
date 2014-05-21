@@ -21,4 +21,4 @@
 	url = https://github.com/gecos-team/gecos-workstation-management-cookbook.git
 [submodule "cookbooks/ohai-gecos"]
 	path = cookbooks/ohai-gecos
-	url = git@github.com:gecos-team/gecos-workstation-ohai-cookbook.git
+	url = https://github.com/gecos-team/gecos-workstation-ohai-cookbook.git
