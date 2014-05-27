@@ -18,7 +18,7 @@ All you need to do is to execute our [install script](https://github.com/gecos-t
 And of course, the snippet to run the install script:
 
 <pre>
-curl -L https://raw.github.com/gecos-team/gecoscc-chef-server-repo/master/scripts/gecoscc-chef-server-install.sh | bash
+curl -L https://raw.githubusercontent.com/gecos-team/gecoscc-chef-server-repo/master/scripts/gecoscc-chef-server-install.sh | bash
 </pre>
 
 That is.
