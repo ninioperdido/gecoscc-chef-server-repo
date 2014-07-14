@@ -8,7 +8,7 @@
 # All rights reserved - EUPL License V 1.1
 # http://www.osor.eu/eupl
 
-export RUBY_VER=2.1.1
+export RUBY_VER=2.1.2
 export CHEF_SERVER_VER=11.0.12
 export GEM_DEPENDS="bundler ohai"
 export CHEF_REPO_NAME='gecoscc-chef-server-repo'
