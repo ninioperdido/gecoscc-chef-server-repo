@@ -20,6 +20,7 @@ which yum && yum install -y http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-r
 
 #delete older trustdb.gpg
 rm $HOME/.gnupg/trustdb.gpg
+curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
 
 # install rvm and ruby
 curl -L https://get.rvm.io | bash -s stable
