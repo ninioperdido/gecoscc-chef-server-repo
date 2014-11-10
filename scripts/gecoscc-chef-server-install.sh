@@ -19,7 +19,7 @@ grep -q "$HOSTNAME" /etc/hosts || sed -i "s|\(127.0.0.1.*\)|\1 $HOSTNAME|g" /etc
 which yum && yum install -y http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
 # install rvm and ruby
-curl -L https://get.rvm.io | bash -s stable
+curl -L https://get.rvm.io | bash -s version 1.25.33
 source /etc/profile.d/rvm.sh 
 rvm install ruby-$RUBY_VER
 rvm use --default ruby-$RUBY_VER
