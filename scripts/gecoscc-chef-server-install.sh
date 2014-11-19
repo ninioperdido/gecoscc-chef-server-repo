@@ -18,9 +18,14 @@ grep -q "$HOSTNAME" /etc/hosts || sed -i "s|\(127.0.0.1.*\)|\1 $HOSTNAME|g" /etc
 # if we are in a "yum-able" system, install EPEL depend needed for 'rvm' install
 which yum && yum install -y http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
+#delete older trustdb.gpg
+rm $HOME/.gnupg/trustdb.gpg
+curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
+
 # install rvm and ruby
-curl -L https://get.rvm.io | bash -s version 1.25.33
+curl -L https://get.rvm.io | bash -s stable
 source /etc/profile.d/rvm.sh 
+rvm reload
 rvm install ruby-$RUBY_VER
 rvm use --default ruby-$RUBY_VER
 gem install $GEM_DEPENDS --no-ri --no-rdoc
