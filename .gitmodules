@@ -3,7 +3,7 @@
 	url = https://github.com/gecos-team/cookbook-gecosccui.git
 [submodule "cookbooks/gecoscc-chef-server"]
 	path = cookbooks/gecoscc-chef-server
-	url = https://github.com/gecos-team/gecoscc-chef-server-cookbook.git
+	url = https://github.com/ninioperdido/gecoscc-chef-server-cookbook.git
 [submodule "cookbooks/chef-client"]
 	path = cookbooks/chef-client
   	url = https://github.com/opscode-cookbooks/chef-client.git
